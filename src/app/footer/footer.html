@@ -1,0 +1,14 @@
+<footer class="container">
+    
+    <p>&copy; {{ getCurrentYear() }} Mise à jour.</p>
+
+    <!-- Réseaux sociaux -->
+    <div class="social-links">
+        <a *ngFor="let social of getSocialLinks()"
+           target="_blank" 
+           class="social-link">
+           
+            <i [class]="social.iconClass"></i>
+        </a>
+    </div>
+</footer>

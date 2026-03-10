@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Bubbleboddy-neue" , "Comfortaa";
+    src: url(./app/font/bubbleboddy_neue/police-titre.ttf);
+    src: url(./app/font/comfortaa/police-texte.ttf);    
+}
+
+:root {
+  --couleur-principale: #FDD90B;
+  --couleur-fond: #F9D0A3;
+  --couleur-texte: #151217;
+  --couleur-alerte: #DA001E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bubbleboddy-neue' , sans-serif;
+    font-weight: 600;
+    color: var(--couleur-principale);
+}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: var(--couleur-texte);
+}
+
+p {
+  
+  font-family: 'Comfortaa' , sans-serif;
+  font-weight: 400;
+}
+
+
+body {
+  color: var(--couleur-texte);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.price {
+  color: var(--couleur-alerte);
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+

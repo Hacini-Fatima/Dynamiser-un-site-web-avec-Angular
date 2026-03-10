@@ -1,0 +1,25 @@
+.header {
+    background-color: var(--couleur-fond);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header nav a {
+    color: var(--couleur-texte);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: large;
+    font-weight: bolder;
+
+}
+
+.header nav a:hover {
+    color: var(--couleur-alerte);
+
+}
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

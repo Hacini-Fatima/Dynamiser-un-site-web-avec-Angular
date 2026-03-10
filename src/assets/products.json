@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "image": "images/asterix.png",
+    "name": "Astérix",
+    "description": "Figurine en résine d'Astérix",
+    "price": 44.99,
+    "details": {
+      "materiaux": "Résine de haute qualité",
+      "hauteur": "12 cm",
+      "poids": "250 g",
+      "collection": "Les Irréductibles Gaulois",
+      "annee": "2023",
+      "edition": "Collection officielle",
+      "caracteristiques": [
+        "Casque ailé amovible",
+        "Glaive en métal",
+        "Base décorative \"Village gaulois\""
+      ],
+      "description_longue": "Astérix, le célèbre guerrier gaulois, est représenté dans une pose dynamique, prêt à défendre son village contre les romains. Chaque détail de son costume a été soigneusement reproduit."
+    }
+  },
+  {
+    "id": 2,
+    "image": "images/obelix.png",
+    "name": "Obélix",
+    "description": "Figurine en résine d'Obélix",
+    "price": 34.99,
+    "details": {
+      "materiaux": "Résine de haute qualité",
+      "hauteur": "14 cm",
+      "poids": "350 g",
+      "collection": "Les Irréductibles Gaulois",
+      "annee": "2023",
+      "edition": "Collection officielle",
+      "caracteristiques": [
+        "Menhir en résine inclus",
+        "Sanglier amovible",
+        "Base décorative \"Forêt\""
+      ],
+      "description_longue": "Obélix, livreur de menhirs et meilleur ami d'Astérix, est tombé dans la potion magique quand il était petit. Cette figurine capture son appétit légendaire et sa force surhumaine."
+    }
+  },
+  {
+    "id": 3,
+    "image": "images/panoramix.png",
+    "name": "Panoramix",
+    "description": "Figurine en résine de Panoramix",
+    "price": 24.99,
+    "details": {
+      "materiaux": "Résine de haute qualité",
+      "hauteur": "13 cm",
+      "poids": "280 g",
+      "collection": "Les Irréductibles Gaulois",
+      "annee": "2023",
+      "edition": "Collection officielle",
+      "caracteristiques": [
+        "Chaudron de potion magique",
+        "Serpe d'or",
+        "Parchemin de recettes"
+      ],
+      "description_longue": "Panoramix, le druide vénérable du village, prépare sa célèbre potion magique. Sa longue barbe blanche et sa serpe d'or sont fidèlement reproduites."
+    }
+  },
+  {
+    "id": 4,
+    "image": "images/idefix.png",
+    "name": "Idéfix",
+    "description": "Figurine en résine d'Idéfix",
+    "price": 19.99,
+    "details": {
+      "materiaux": "Résine de haute qualité",
+      "hauteur": "6 cm",
+      "poids": "120 g",
+      "collection": "Les Compagnons",
+      "annee": "2023",
+      "edition": "Collection officielle",
+      "caracteristiques": [
+        "Os en résine",
+        "Base \"Arbre\"",
+        "Expression fidèle à la BD"
+      ],
+      "description_longue": "Idéfix, le petit chien blanc d'Obélix, est toujours prêt à suivre ses maîtres dans leurs aventures. Il déteste qu'on coupe les arbres !"
+    }
+  },
+  {
+    "id": 5,
+    "image": "images/assurancetourix.png",
+    "name": "Assurancetourix",
+    "description": "Figurine en résine d'Assurancetourix",
+    "price": 22.99,
+    "details": {
+      "materiaux": "Résine de haute qualité",
+      "hauteur": "12 cm",
+      "poids": "240 g",
+      "collection": "Les Irréductibles Gaulois",
+      "annee": "2023",
+      "edition": "Collection officielle",
+      "caracteristiques": [
+        "Lyre en résine",
+        "Bâillon amovible",
+        "Base \"Banquet\""
+      ],
+      "description_longue": "Assurancetourix, le barde du village, est souvent attaché et bâillonné pendant les banquets. Sa lyre est parfaitement détaillée."
+    }
+  },
+  {
+    "id": 6,
+    "image": "images/cesar.png",
+    "name": "César",
+    "description": "Figurine en résine de César",
+    "price": 27.99,
+    "details": {
+      "materiaux": "Résine de haute qualité",
+      "hauteur": "13 cm",
+      "poids": "300 g",
+      "collection": "Les Romains",
+      "annee": "2023",
+      "edition": "Collection officielle",
+      "caracteristiques": [
+        "Laurier de la victoire",
+        "Toge romaine",
+        "Parchemin \"Veni, vidi, vici\""
+      ],
+      "description_longue": "Jules César, l'empereur romain, contemple avec frustration ce petit village gaulois qui résiste encore et toujours à l'envahisseur."
+    }
+  }
+]

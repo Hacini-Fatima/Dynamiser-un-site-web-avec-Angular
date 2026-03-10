@@ -1,0 +1,44 @@
+
+<div class="container">
+
+    <h1>Nos Figurines Astérix</h1>
+
+    <div>
+        <div class="search-box">
+            <input 
+                type="text" 
+                [(ngModel)]="searchName" 
+                placeholder="Rechercher un personnage..."
+                class="search-input">
+            <span *ngIf="searchName" class="clear-search" (click)="searchName = ''">✕</span>
+        </div>
+
+        <!-- Message si la lettre ne correspond pas au nom du produit -->
+        <div *ngIf="searchName && (products | filter : searchName).length === 0" class="no-results">
+            <p>Aucun produit ne commence par la lettre "{{ searchName }}"</p>
+        </div>
+
+        <div class="radio-group">
+            <label>
+                <input (click)="setSort('prix')" type="radio" name="sort">
+                Prix croissant
+            </label>
+            <label>
+                <input (click)="setSort('prixDesc')" type="radio" name="sort">
+                Prix décroissant
+            </label>
+        </div>
+
+        <div class="products-grid">
+            <div *ngFor="let product of products | filter:searchName | sort:sortBy" class="product-card">
+                <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+                <h3>{{ product.name }}</h3>
+                <p class="description">{{ product.description }}</p>
+                <p class="price">{{ product.price | currency:'EUR' }}</p>
+                <button class="show-details" (click)="viewProductDetails(product.id)">
+                    Afficher le produit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

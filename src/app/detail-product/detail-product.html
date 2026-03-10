@@ -1,0 +1,74 @@
+<div class="product-container">
+    <button class="back-button" (click)="goBack()">
+        Retour à la liste
+    </button>
+    
+    <!-- Message si produit non trouvé -->
+    <div *ngIf="product === undefined" class="not-found">
+        <h2>Produit non trouvé</h2>
+        <p>Désolé, ce produit n'existe pas.</p>
+    </div>
+    
+    <!-- Affichage du produit -->
+    <div *ngIf="product" class="product-card">
+        <!-- Colonne de gauche : Informations -->
+        <div class="product-info">
+            <h1 class="product-title">{{ product.name }}</h1>
+            
+            <div class="product-description">
+                <p>{{ product.description }}</p>
+            </div>
+            
+            <!-- Price -->
+            <div class="price">
+                {{ product.price | currency:'EUR' }}
+            </div>
+            
+            <!-- Détails supplémentaires -->
+            <div *ngIf="product.details" class="product-details">
+                <h2>Description :</h2>
+                <p class="details-text">{{ product.details.description_longue }}</p>
+                
+                <!-- Caractéristiques techniques -->
+                <div class="specs-grid" *ngIf="product.details.caracteristiques">
+                    <h3>Caractéristiques :</h3>
+                    <ul>
+                        <li *ngFor="let item of product.details.caracteristiques">
+                            ✓ {{ item }}
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- spécifications techniques -->
+                <table class="spec-table" *ngIf="product.details.materiaux">
+                    <h4>Détails du produi :</h4>
+                    <tr>
+                        <td>Matériaux</td>
+                        <td>{{ product.details.materiaux }}</td>
+                    </tr>
+                    <tr>
+                        <td>Hauteur</td>
+                        <td>{{ product.details.hauteur }}</td>
+                    </tr>
+                    <tr>
+                        <td>Poids</td>
+                        <td>{{ product.details.poids }}</td>
+                    </tr>
+                    <tr>
+                        <td>Collection</td>
+                        <td>{{ product.details.collection }}</td>
+                    </tr>
+                    <tr>
+                        <td>Année</td>
+                        <td>{{ product.details.annee }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Colonne de droite : Image -->
+        <div class="product-image-container">
+            <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+        </div>
+    </div>
+</div>
