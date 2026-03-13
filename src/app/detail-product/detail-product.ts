@@ -1,4 +1,4 @@
-// detail-produit.ts - CORRIGÉ
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
